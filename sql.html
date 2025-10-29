@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apa itu Sql ?</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<script>
+  function toggleMenu() {
+    document.querySelector('.nav-links').classList.toggle('show');
+  }
+</script>
+
+<body class="sql">
+
+ <nav>
+  <div class="garistiga" onclick="toggleMenu()">&#9776;</div>
+  <div class="nav-links">
+    <a href="index.html">Beranda</a>
+    <a href="profile.html">Profile</a>
+    <a href="https://ubpkarawang.ac.id/" target="_blank">
+      <abbr title="Universitas Buana Perjuangan Karawang">UBP KARAWANG </abbr></a>
+  </div>
+</nav>
+
+
+  <header class="detail-header">
+    <h1>Apa Itu SQL,DDL,DML,DCL,TCL ?</h1>
+  </header>
+
+<article class="detail-content">
+   <div class="detail-img" style="background-image: url('https://i.pinimg.com/1200x/9b/e2/06/9be206a792c842092a2525bc0864afa1.jpg');"></div>
+    <p style="text-indent:30px  ;">Structured Query Language (SQL) merupakan bahasa standar yang digunakan untuk melakukan pengelolaan dan manipulasi data pada sistem manajemen basis data relasional (RDBMS). SQL berfungsi sebagai sarana komunikasi antara pengguna atau aplikasi dengan basis data, sehingga berbagai operasi seperti pembuatan, perubahan, penghapusan, maupun pengambilan data dapat dilakukan dengan efisien.
+    Dalam konteks ilmiah, SQL digolongkan sebagai bahasa deklaratif, karena pengguna cukup menyatakan apa yang diinginkan terhadap data, tanpa harus menjelaskan bagaimana proses tersebut dilakukan. SQL terbagi menjadi beberapa bagian utama, yaitu DDL, DML, DCL, dan TCL, yang masing-masing memiliki tanggung jawab khusus dalam pengelolaan sistem basis data.</p>
+        <ol>
+            <li><b>DDL (Data Definition Language)</b></li>
+            <p style="text-indent:30px  ;">Data Definition Language (DDL) adalah bagian dari SQL yang berfungsi untuk menentukan dan mengatur struktur atau skema dari basis data. Melalui DDL, pengguna dapat menciptakan, memodifikasi, dan menghapus berbagai objek dalam basis data, seperti tabel, indeks, serta relasi antar tabel.
+            Subbahasa ini sangat penting pada tahap perancangan basis data, karena menentukan bagaimana data akan disusun dan disimpan. Beberapa perintah yang tergolong dalam DDL antara lain:</p>
+                <ul>
+                    <li>CREATE -- digunakan untuk membuat tabel atau objek baru</li>
+                    <li>ALTER -- digunakan untuk memodifikasi struktur tabel yang telah ada</li>
+                    <li>DROP -- digunakan untuk menghapus tabel dari basis data</li>
+                </ul>
+            <p>Setiap eksekusi perintah DDL secara langsung memengaruhi struktur logis maupun fisik dari basis data.</p>
+            <li><b>DML (Data Manipulation Language)</b></li>
+            <p style="text-indent:30px  ;">Data Manipulation Language (DML) adalah subbahasa SQL yang digunakan untuk melakukan pengolahan dan manipulasi data yang tersimpan dalam tabel basis data. DML memungkinkan pengguna untuk menambah, memperbarui, menghapus, serta menampilkan data sesuai dengan kebutuhan sistem atau pengguna.
+            Perintah-perintah utama dalam DML meliputi:</p>
+                <ul>
+                    <li>INSERT -- untuk menambahkan data baru ke dalam tabel</li>
+                    <li>UPDATE -- untuk memperbarui nilai data yang telah ada</li>
+                    <li>DELETE -- untuk menghapus data dari tabel</li>
+                    <li>SELECT -- untuk menampilkan atau mengambil data</li>
+                </ul>
+            <p>Berbeda dengan DDL yang mengatur struktur, DML lebih menitikberatkan pada isi atau konten data, sehingga sering digunakan dalam proses operasional dan transaksi harian sistem basis data.</p>
+            <li><b>DCL (Data Control Language)</b></li>
+            <p style="text-indent:30px  ;">Data Control Language (DCL) merupakan bagian dari SQL yang digunakan untuk mengatur hak akses dan keamanan data dalam sistem basis data. DCL berfungsi memberikan kendali kepada administrator untuk menentukan siapa yang dapat membaca, menulis, atau mengubah data tertentu.
+            Beberapa perintah utama dalam DCL antara lain:</p>
+                <ul>
+                    <li>GRANT -- digunakan untuk memberikan hak akses kepada pengguna</li>
+                    <li>REVOKE -- digunakan untuk mencabut hak akses yang telah diberikan</li>
+                </ul>
+            <p>Peran DCL sangat penting dalam menjaga keamanan, kerahasiaan, dan integritas data, terutama pada sistem basis data yang digunakan oleh banyak pengguna dengan tingkat otorisasi berbeda.</p>
+            <li><b>TCL (Transaction Control Language)</b></li>
+            <p style="text-indent:30px  ;">Transaction Control Language (TCL) adalah subbahasa SQL yang berfungsi untuk mengatur dan mengelola transaksi dalam basis data. Transaksi diartikan sebagai sekumpulan operasi yang harus dijalankan secara utuh agar data tetap konsisten dan akurat. TCL memastikan bahwa setiap perubahan data dapat disimpan secara permanen (commit) atau dibatalkan (rollback) jika terjadi kesalahan.
+            Perintah TCL yang umum digunakan meliputi:</p>
+                <ul>
+                    <li>COMMIT -- untuk menyimpan perubahan data secara permanen</li>
+                    <li>ROLLBACK -- untuk membatalkan perubahan yang belum dikonfirmasi</li>
+                    <li>SAVEPOINT -- untuk menandai titik tertentu dalam transaksi agar dapat dikembalikan jika diperlukan</li>
+                </ul>
+            <p>Fungsi utama TCL adalah menjaga konsistensi dan keandalan data dalam sistem yang menangani banyak transaksi secara bersamaan.</p>
+        </ol>
+        <h3>KESIMPULAN</h3>
+        <p >Secara keseluruhan, SQL merupakan bahasa utama dalam sistem basis data relasional yang terbagi ke dalam beberapa bagian dengan perannya masing-masing. DDL digunakan untuk membentuk struktur basis data, DML berfungsi dalam pengolahan isi data, DCL mengatur keamanan dan hak akses, sedangkan TCL bertanggung jawab atas pengelolaan transaksi data. Kombinasi dari keempat komponen ini menjadikan SQL sebagai elemen fundamental dalam pengembangan dan pemeliharaan sistem basis data modern.</p>
+</article>
+
+</body>
+</html>

@@ -371,6 +371,10 @@ body.normalisasi {
   background: url("https://i.pinimg.com/736x/7b/c6/b9/7bc6b96c64ad504db034016e8d34463b.jpg") no-repeat center center fixed;
   background-size: cover;
 }
+body.denormalisasi {
+  background: url("https://i.pinimg.com/1200x/ad/5f/72/ad5f72869bd3b37c7862f1a572682ea2.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
 body.sql {
   background: url("https://i.pinimg.com/736x/2b/a5/b2/2ba5b29abb92810619ffaceed91433ea.jpg") no-repeat center center fixed;
   background-size: cover;
